@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #d3c3dc;
+                  /* f0f4fc */
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+/* dashboard section */
+.dashboard{
+  padding: 20px 20px 40px 20px;
+  background-color: #5f259e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.dashboardText h2{
+  margin-bottom: 10px;
+}
+.dashboardImg{
+  color: #fff;
+  padding: 25px;
+  height: 100px;
+  border-radius: 30px;
+}
+
+
+/* filter section */
+.filterContainer{
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 30px;
+}
+.heading{
+  padding: 40px 0 30px 40px;
+}
+.dateContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 30px 20px;
+}
+.fromDate input, .toDate input{
+  background-color: #f2e4fd;
+  padding: 25px 45px;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  outline-color: lightgrey;
+}
+.orderStatus{
+  margin: 0 0 20px 40px;
+}
+.select{
+  padding: 20px 0 20px 5px;
+  border: 1px solid #fff;
+  outline-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+select{
+  background-color: #f2e4fd;
+  font-size: 40px;
+  padding: 22px 380px 22px 50px;
+  border-radius: 25px;
+  text-align: left;
+  outline-color: grey;
+  border: #fff;
+}
+option{
+  font-size: 15px;
+}
+.select button{
+  background-color: #5f259e;
+  color: #ffffff;
+  font-size: 2.2rem;
+  padding: 12px 35px 15px 35px;
+  border-radius: 50px;
+}
+.summary{
+  padding: 20px 0;
+  display: flex;
+}
+.Sales{
+  margin-left: 60px;
+}
+.summary span{
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+
+/* latest Orders */
+.lOrdersHeading{
+  margin: 40px 20px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latestOrders{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 25px 0 15px;
+  margin: 0 20px 20px;
+}
+.IDs{
+  color: #5f259e;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.num{
+  color: black;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.ruppes{
+    margin-bottom: 10px;
+}
+.justBtn{
+  display: flex;
+  background-color: #5f259e;
+  color: #ffffff;
+  font-size: 2.2rem;
+  padding: 15px 20px 15px 30px;
+  border-radius: 50px;
+}
+.deliver{
+  font-weight: lighter !important;
+}
+.justBtn i{
+  margin: 5px 0 0 20px;
+}
+
+
+/* menu bar section */
+.menuBar{
+  background-color: #ffffff;
+  padding: 35px 0;
+  color: #a9adb1;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px 0 grey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.menuBar i:hover{
+  color: #505fb1;
+}
