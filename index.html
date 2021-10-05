@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Orders</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  </head>
-  <body>
-    <!-- page container -->
-    <div class="container">
-      <!-- dashboard section -->
-      <div class="dashboard">
-        <div class="dashboardText">
-          <h2>Summary</h2>
-          <p id="liveDate">xx xxx, xxxx</p>
-        </div>
-        <div class="dashboardImg">
-          <i class="fas fa-user-secret fa-2x"></i>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Orders</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- page container -->
+  <div class="container">
+    <!-- dashboard section -->
+    <div class="dashboard">
+      <div class="dashboardText">
+        <h2>Orders & Returns</h2>
+        <p id="liveDate">xx xxx, xxxx</p>
       </div>
+      <div class="dashboardImg">
+        <i class="fas fa-user-secret fa-2x"></i>
+      </div>
+    </div>
 
 
     <!-- Filter section -->
@@ -29,13 +31,13 @@
       </div>
       <div class="dateContainer">
         <div class="fromDate">
-          <input type="date" name="" value="" placeholder="From date" onfocus="(this.type='date')">
+          <input type="date" name="" value="" placeholder="From date">
         </div>
         <div class="to">
           <p>to</p>
         </div>
         <div class="toDate">
-          <input type="date" name="" value="" placeholder="To date" onfocus="(this.type='date')">
+          <input type="date" name="" value="" placeholder="To date">
         </div>
       </div>
       <div class="orderStatus">
@@ -43,13 +45,16 @@
           <p>Order Status</p>
         </div>
         <div class="select">
-          <select class="selectStatus" name="">
-            <option value="All">All</option>
-            <option value="Accepted">Accepted</option>
-            <option value="Processing">Processing</option>
-            <option value="Processed">Processed</option>
-            <option value="Delivered">Delivered</option>
-          </select>
+          <label for="">
+            <select class="selectStatus" name="">
+              <option value="All">All</option>
+              <option value="Accepted">Accepted</option>
+              <option value="Processing">Processing</option>
+              <option value="Processed">Processed</option>
+              <option value="Delivered">Delivered</option>
+            </select>
+          </label>
+
           <button type="submit" name="button">Apply</button>
         </div>
         <div class="summary">
@@ -60,9 +65,9 @@
     </div>
 
 
-    <!-- Latest Orders -->
+    <!-- Orders Section-->
     <div class="lOrdersHeading">
-      <h3>Latest Orders</h3>
+      <h3>Orders</h3>
     </div>
     <div class="latestOrders">
       <div class="orderID">
@@ -134,16 +139,188 @@
         <p>View</p>
         <i class="fas fa-chevron-right fa-sm"></i>
       </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ID <span class="IDs">210023</span></p>
+        <p>01/03/1997</p>
+      </div>
+      <div class="amount">
+        <p class="ruppes">Total<span class="num">$600</span></p>
+        <p class="ruppes">Earning<span class="num">$210</span></p>
+      </div>
+      <div class="status">
+        <p class="deliver">Delivered</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+
+    <div class="pageChangeButton">
+      <label class="checkBoxContainer">
+        <input type="radio" checked="checked" name="group1">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group1">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group1">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group1">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+
+    <!-- Return Section -->
+    <div class="lOrdersHeading">
+      <h3>Returns</h3>
+    </div>
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+    <div class="latestOrders">
+      <div class="orderID">
+        <p class="IDs">ReturnID <span class="IDs">668044</span></p>
+        <p class="IDs">OrderID <span class="IDs">210023</span></p>
+      </div>
+      <div class="amount">
+        <p>01/03/1997</p>
+      </div>
+      <div class="status">
+        <p class="deliver">Completed</p>
+      </div>
+      <div class="justBtn">
+        <p>View</p>
+        <i class="fas fa-chevron-right fa-sm"></i>
+      </div>
+    </div>
+
+
+    <div class="pageChangeButton">
+      <label class="checkBoxContainer">
+        <input type="radio" checked="checked" name="group2">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group2">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group2">
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkBoxContainer">
+        <input type="radio" name="group2">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+
+
+    <div class="test">
+
     </div>
 
 
     <!-- menu bar section -->
     <div class="menuBar">
-      <i class="fas fa-bars fa-2x"></i>
-      <i class="far fa-chart-bar fa-2x"></i>
-      <i class="far fa-calendar-alt fa-2x"></i>
-      <i class="far fa-user fa-2x"></i>
+      <i class="fas fa-home fa-2x"></i>
+      <i class="fas fa-cart-plus fa-2x"></i>
+      <i class="fas fa-headset fa-2x"></i>
+      <i class="fas fa-user-cog fa-2x"></i>
     </div>
-  </body>
-  <script src="index.js" charset="utf-8"></script>
+</body>
+<script src="index.js" charset="utf-8"></script>
+
 </html>
